@@ -1,0 +1,27 @@
+:root {
+    --cor-fundo: #191970;
+    --cor-texto: #FFFFFF;
+    --h1-color: #87CEFA;
+    --h2-color: #00BFFF;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    color: var(--h1-color);
+    padding: 50px 10%;
+}
+
+h2 {
+    color: var(--h2-color);
+    
+}
+
+.ab {
+    padding: 50px 10%;
+    
+}
