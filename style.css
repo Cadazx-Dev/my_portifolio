@@ -1,8 +1,9 @@
 :root {
     --cor-fundo: #191970;
     --cor-texto: #FFFFFF;
-    --h1-color: #87CEFA;
-    --h2-color: #00BFFF;
+    --h1-color:  #87CEFA;
+    --h2-color:  #00BFFF;
+    --cor-borda: #000000;
 }
 
 body {
@@ -23,5 +24,29 @@ h2 {
 
 .ab {
     padding: 50px 10%;
-    
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: var(--cor-texto) 2px solid;
+}
+
+.hab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 50px;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.hab li {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.hab li:hover {
+    background-color: var(--h1-color);
+    transition: 0.3s;
 }
