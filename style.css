@@ -1,39 +1,92 @@
 *{
-    padding: 0px; margin: 0px; box-sizing: 0px;
+    padding: 0px; margin: 0px; box-sizing: border-box;
 }
 :root {
-    --cor-fundo: #191970;
-    --cor-texto: #FFFFFF;
-    --h1-color:  #87CEFA;
-    --h2-color:  #00BFFF;
-    --cor-borda: #000000;
+    --cor-fundo: #0f0026;
+    --cor-f:     #6d28d9;
+    --cor-f-2:   #a855f7;
+    --cor-texto: #ffffff;
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background: linear-gradient(90deg, var(--cor-fundo), var(--cor-f), var(--cor-f-2));
+    background-attachment: fixed;
     color: var(--cor-texto);
-    font-family: "Inter", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    max-width: 1500px;
+    padding: 50px 10%;
+    gap: 20px;
 }
 
 h1 {
-    color: var(--h1-color);
-    padding: 50px 10%;
+    color: var(--cor-texto);
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: var(--h2-color);
+    color: var(--cor-texto);
+    font-size: 30px;
+}
+
+h3 {
+    color: var(--cor-texto);
     margin-bottom: 30px;
     font-size: 40px;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 30px;
+}
+
+hr {border-bottom: var(--cor-texto) 1px solid;}
+
+.logo-principal {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10%;
+    margin-top: -150px;
+}
+
+.btn-CV {
+    background-color: var(--cor-texto);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-CV:hover {
+    background-color: var(--cor-texto);
+    transition: 0.3s;
+    
 }
 
 .ab {
-    padding: 50px 10%;
+    min-height: 100vh;
     max-width: 1000px;
+    padding: 50px 10%;
     margin: 0 auto;
-    border-bottom: var(--cor-texto) 2px solid;
+    width: 100%;
+    
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hab {
@@ -41,7 +94,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .hab li {
@@ -49,7 +102,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--h2-color);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
     border-radius: 15px;
     width: 80px;
@@ -59,6 +112,19 @@ h2 {
 }
 
 .hab li:hover {
-    background-color: var(--h1-color);
+    background-color: var(--cor-texto);
     transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    h1 {font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5;
+        text-align: center;
+    }
+    .logo-principal { max-width: 300px;
+    }
 }
