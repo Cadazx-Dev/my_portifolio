@@ -12,7 +12,7 @@ body {
     background: linear-gradient(90deg, var(--cor-fundo), var(--cor-f), var(--cor-f-2));
     background-attachment: fixed;
     color: var(--cor-texto);
-    font-family: 'Poppins', sans-serif;
+    font-family:'Inter' 'Poppins' sans-serif;
     
 }
 
@@ -29,13 +29,15 @@ header {
 
 h1 {
     color: var(--cor-texto);
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 10px;
+    font-weight: 1000;
 }
 
 h2 {
     color: var(--cor-texto);
     font-size: 30px;
+    font-weight: 800;
 }
 
 h3 {
@@ -43,13 +45,15 @@ h3 {
     margin-bottom: 30px;
     font-size: 40px;
     border-radius: 15px;
+    font-weight: 600;
 }
 
 p {
     font-size: 30px;
 }
 
-hr {border-bottom: var(--cor-texto) 1px solid;}
+hr {border-bottom: var(--cor-texto) 1px solid;
+}
 
 .logo-principal {
     width: 100%;
@@ -79,14 +83,9 @@ hr {border-bottom: var(--cor-texto) 1px solid;}
     padding: 50px 10%;
     margin: 0 auto;
     width: 100%;
-    
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .hab {
@@ -114,6 +113,17 @@ hr {border-bottom: var(--cor-texto) 1px solid;}
 .hab li:hover {
     background-color: var(--cor-texto);
     transition: 0.3s;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 600px) {
