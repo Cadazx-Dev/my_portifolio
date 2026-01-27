@@ -27,6 +27,10 @@ header {
     gap: 20px;
 }
 
+footer {
+    min-height: 50vh;
+}
+
 h1 {
     color: var(--cor-texto);
     font-size: 80px;
@@ -50,9 +54,6 @@ h3 {
 
 p {
     font-size: 30px;
-}
-
-hr {border-bottom: var(--cor-texto) 1px solid;
 }
 
 .logo-principal {
@@ -84,16 +85,38 @@ hr {border-bottom: var(--cor-texto) 1px solid;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
+.ab-2 {
+    
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto 50px auto;
+    max-width: 1200px;
+    min-height: auto;
+    border-radius: 30px;
+}
+
+.ab2-1 {
+    display: flex;
+    flex-direction: column;
+} 
+
 .hab {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     font-size: 30px;
+    
 }
 
 .hab li {
@@ -115,16 +138,23 @@ hr {border-bottom: var(--cor-texto) 1px solid;
     transition: 0.3s;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-out;
-}
+  .ab-2 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px;
+        max-width: 1100px;
+        margin: 0 auto;
 
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
+    }
+
+    .ab2-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: 10px;
+        list-style: none;
+    }
+
 
 @media (max-width: 600px) {
     h1 {font-size: 1.8rem;
@@ -138,3 +168,18 @@ hr {border-bottom: var(--cor-texto) 1px solid;
     .logo-principal { max-width: 300px;
     }
 }
+
+@media (min-width: 1200px) {
+    h1 {font-size: 5rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+
+    header {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }  }
