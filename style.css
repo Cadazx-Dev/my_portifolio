@@ -157,19 +157,19 @@ p {
 
 
 @media (max-width: 600px) {
-    h1 {font-size: 1.8rem;
+    h1 {font-size: 40px;
         text-align: center;
     }
 
     h2 {
-        font-size: 1.5;
+        font-size: 30px;
         text-align: center;
     }
     .logo-principal { max-width: 300px;
     }
 
-    .ab {
-        font-size: 15px;
+    .ab p {
+        font-size: 20px;
     }
 }
 
