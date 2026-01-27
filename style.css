@@ -167,6 +167,10 @@ p {
     }
     .logo-principal { max-width: 300px;
     }
+
+    .ab {
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 1200px) {
