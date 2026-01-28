@@ -156,22 +156,54 @@ p {
     }
 
 
-@media (max-width: 600px) {
-    h1 {font-size: 40px;
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 1.8rem;
         text-align: center;
-    }
-
-    h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-    .logo-principal { max-width: 300px;
+        padding: 0 10px;
     }
 
     .ab p {
-        font-size: 20px;
+        font-size: 1rem;
+        text-align: left;
+        padding: 0 15px;
+        line-height: 1.6;
+    }
+
+    .ab2-1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .ab2-1 a {
+        display: block;
+        text-decoration: none;
+        background: linear-gradient(90deg, var(--cor-fundo), var(--cor-f), var(--cor-f-2));
+        color: var(--cor-texto);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .logo-principal {
+        max-width: 150px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
     }
 }
+
+
+
+
+
 
 @media (min-width: 1200px) {
     h1 {font-size: 5rem;
