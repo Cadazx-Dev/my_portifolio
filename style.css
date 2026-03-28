@@ -2,10 +2,10 @@
     padding: 0px; margin: 0px; box-sizing: border-box;
 }
 :root {
-    --cor-fundo: #0f0026;
-    --cor-f:     #6d28d9;
-    --cor-f-2:   #a855f7;
-    --cor-texto: #ffffff;
+    --cor-fundo: #0b0118;
+    --cor-f:     #1a0933;
+    --cor-f-2:   #6b21a8;
+    --cor-texto: #f8fafc;
 }
 
 body {
@@ -156,21 +156,32 @@ p {
     }
 
 
+
+
 @media (max-width: 768px) {
     
-    h1 {
+    /* 1. Títulos centralizados */
+    h1, h2, h3 {
         font-size: 1.8rem;
-        text-align: center;
+        text-align: center; /* Centraliza o texto */
         padding: 0 10px;
+        width: 100%; /* Garante que ocupe a largura toda para centralizar real */
     }
 
+    /* 2. O texto "Sobre Mim" CENTRALIZADO */
     .ab p {
         font-size: 1rem;
-        text-align: left;
-        padding: 0 15px;
+        text-align: center; /* MUDADO: de left para center */
+        padding: 0 20px;
         line-height: 1.6;
     }
 
+    /* 3. Ajuste nas seções para garantir o alinhamento */
+    .ab, .ab-2 {
+        text-align: center;
+    }
+
+    /* Mantendo o resto que já estava certo */
     .ab2-1 ul {
         display: flex;
         flex-direction: column;
@@ -189,7 +200,7 @@ p {
         border-radius: 8px;
         text-align: center;
         font-weight: bold;
-
+        width: 80%; /* Adicionei isso para os botões não ficarem colados na borda */
     }
 
     .logo-principal {
