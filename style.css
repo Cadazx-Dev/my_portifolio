@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
    background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 50%, #1a0533 100%);
     margin: auto;                           /* Cor da pag */
@@ -77,3 +78,237 @@ main {
     font-size: 20px;
     
 }
+=======
+*{
+    padding: 0px; margin: 0px; box-sizing: border-box;
+}
+:root {
+    --cor-fundo: #0b0118;
+    --cor-f:     #1a0933;
+    --cor-f-2:   #6b21a8;
+    --cor-texto: #f8fafc;
+}
+
+body {
+    background: linear-gradient(90deg, var(--cor-fundo), var(--cor-f), var(--cor-f-2));
+    background-attachment: fixed;
+    color: var(--cor-texto);
+    font-family:'Inter' 'Poppins' sans-serif;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    max-width: 1500px;
+    padding: 50px 10%;
+    gap: 20px;
+}
+
+footer {
+    min-height: 50vh;
+}
+
+h1 {
+    color: var(--cor-texto);
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
+
+h2 {
+    color: var(--cor-texto);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h3 {
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    font-size: 40px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 30px;
+}
+
+.logo-principal {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10%;
+    margin-top: -150px;
+}
+
+.btn-CV {
+    background-color: var(--cor-texto);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-CV:hover {
+    background-color: var(--cor-texto);
+    transition: 0.3s;
+    
+}
+
+.ab {
+    min-height: 100vh;
+    max-width: 1000px;
+    padding: 50px 10%;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ab-2 {
+    
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto 50px auto;
+    max-width: 1200px;
+    min-height: auto;
+    border-radius: 30px;
+}
+
+.ab2-1 {
+    display: flex;
+    flex-direction: column;
+} 
+
+.hab {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 30px;
+    
+}
+
+.hab li {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.hab li:hover {
+    background-color: var(--cor-texto);
+    transition: 0.3s;
+}
+
+  .ab-2 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+
+    }
+
+    .ab2-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: 10px;
+        list-style: none;
+    }
+
+
+
+
+@media (max-width: 768px) {
+    
+    /* 1. Títulos centralizados */
+    h1, h2, h3 {
+        font-size: 1.8rem;
+        text-align: center; /* Centraliza o texto */
+        padding: 0 10px;
+        width: 100%; /* Garante que ocupe a largura toda para centralizar real */
+    }
+
+    /* 2. O texto "Sobre Mim" CENTRALIZADO */
+    .ab p {
+        font-size: 1rem;
+        text-align: center; /* MUDADO: de left para center */
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    /* 3. Ajuste nas seções para garantir o alinhamento */
+    .ab, .ab-2 {
+        text-align: center;
+    }
+
+    /* Mantendo o resto que já estava certo */
+    .ab2-1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .ab2-1 a {
+        display: block;
+        text-decoration: none;
+        background: linear-gradient(90deg, var(--cor-fundo), var(--cor-f), var(--cor-f-2));
+        color: var(--cor-texto);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        width: 80%; /* Adicionei isso para os botões não ficarem colados na borda */
+    }
+
+    .logo-principal {
+        max-width: 150px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    h1 {font-size: 5rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+
+    header {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }  }
+>>>>>>> afff0d5022c9b1b3f849ab0ea7b91481f361aaea
