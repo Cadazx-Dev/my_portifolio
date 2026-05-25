@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.home {
+        background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 50%, #1a0533 100%);
+        color: aliceblue;
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 80px;
+        position: relative;
+        
+}
+
+.cp {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.about {
+        background: aliceblue;
+        color: #0a0a0f;
+        height: 100vh;
+        scroll-snap-align: start;
+
+}
+
+.projetos {
+        background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 50%, #1a0533 100%);
+        color: aliceblue;
+        height: 100vh;
+        scroll-snap-align: start;
+}
+
+h1, h2 {
+    padding-bottom: 12px;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 4.0rem;
+}
+
+.Botão-CV, .idioma {
+    background-color: #ffffff1a;
+    border-radius: 20px;
+    color: aliceblue;
+    border: none;
+    padding: 15px;
+    
+}
+
+.Botão-CV {
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    text-decoration: none;
+}
