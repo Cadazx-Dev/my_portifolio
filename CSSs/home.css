@@ -1,7 +1,12 @@
 @media (max-width: 768px) {
+    
+    body{ overflow-x: hidden;
+
+    }
+
     .logo {
         left: 30px;
-        width:90%; 
+        width: 85%; 
     }
 
     .home {
