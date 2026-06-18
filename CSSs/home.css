@@ -34,7 +34,7 @@
         font-weight: 600;
     }
 
-    .cp {
+    .home-content {
         left: 20px;
         font-weight: 600;
     }
@@ -71,7 +71,7 @@
         
 }
 
-.cp {
+.home-content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
