@@ -4,4 +4,54 @@
         height: 100vh;
         scroll-snap-align: start;
 
+        display: flex;
+        align-items: center;
 }
+
+.about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+}
+
+.about-img img {
+        width: 500px;
+        height: 500px;
+        border-radius: 20% ;
+        object-fit: cover;
+}
+
+.about-content {
+        max-width: 650px;
+}
+
+.about-content h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+}
+
+.about-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+}
+
+.skills {
+        display: flex;
+        gap: 12px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+}
+
+.skills span {
+        padding: 8px 16px;
+        border-radius: 20px;
+        background: #0a0a0f;
+        color: white;
+        font-size: 0.9rem;
+}
+
