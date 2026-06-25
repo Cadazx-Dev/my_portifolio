@@ -32,14 +32,67 @@
 }
 
 .filtro-btn:hover {
-    transform: translateY(-3px);
-
-    background: aliceblue;
-    color: #0a0a0f;
+        transform: translateY(-3px);
+        background: aliceblue;
+        color: #0a0a0f;
 }
 
 .filtro-btn.active {
-    background: aliceblue;
-    color: #0a0a0f;
+        background: aliceblue;
+        color: #0a0a0f;
 }
 
+.projetos-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+}
+
+.projeto-card {
+    width: 350px;
+    height: 180px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.projeto-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.projeto-info {
+    opacity: 0;
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+
+.projeto-card:hover {
+    height: 320px;
+    transform: translateY(-8px);
+}
+
+.projeto-card:hover .projeto-info {
+    opacity: 1;
+}
+
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.techs span {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: aliceblue;
+    color: #0a0a0f;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
