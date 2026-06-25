@@ -12,3 +12,34 @@
 .projetos h2 {
         font-size: 4rem;
 }
+
+.filtros {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+}
+
+.filtros-btn {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.1);
+        color: aliceblue;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+}
+
+.filtro-btn:hover {
+    transform: translateY(-3px);
+
+    background: aliceblue;
+    color: #0a0a0f;
+}
+
+.filtro-btn.active {
+    background: aliceblue;
+    color: #0a0a0f;
+}
+
