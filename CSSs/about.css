@@ -11,7 +11,7 @@
 .about-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 80px;
 
         width: 90%;
@@ -24,34 +24,133 @@
         height: 500px;
         border-radius: 20% ;
         object-fit: cover;
+
+        border: 2px solid #0a0a0f;
 }
 
 .about-content {
         max-width: 650px;
+        margin-top: 30px;
+        transition-delay: 0.2s;
 }
 
 .about-content h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
+        font-size: 4rem;
+        margin-bottom: 35px;
+        font-weight: 700;
 }
 
 .about-content p {
         font-size: 1.1rem;
-        line-height: 1.7;
+        line-height: 1.8;
+        margin-bottom: 20px;
 }
 
 .skills {
         display: flex;
-        gap: 12px;
-        margin-top: 25px;
+        gap: 15px;
+        margin-top: 40px;
         flex-wrap: wrap;
 }
 
 .skills span {
-        padding: 8px 16px;
-        border-radius: 20px;
+        padding: 12px 24px;
+        border-radius: 999px;
         background: #0a0a0f;
         color: white;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: 0.3s ease;
 }
 
+.skills span:hover {
+        transform: translateY(-3px)
+}
+
+/* Efeito de entrada do codigo */
+
+.about-img,
+.about-content {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.about-img {
+    transform: translateX(-100px);
+}
+
+.about-content {
+    transform: translateX(100px);
+}
+
+.about-img.show,
+.about-content.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Tela do celular e outros dispositivos */
+
+@media (max-width: 768px) {
+
+        body {
+                overflow-x: hidden;
+        }
+
+        .about{
+                height: auto;
+                min-height: 100vh;
+                padding: 10px 0;
+        }
+
+        .about-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                width: 90%;
+                
+        }
+
+        .about-img {
+                transform: none !important;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+        }
+
+        .about-img img {
+                width: 220px;
+                height: 220px;
+                max-width: 100%;
+        }
+
+        .about-content {
+                max-width: 100%;
+                margin-top: 0%;
+        }
+
+        .about-content h2 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+        }
+
+        .about-content p {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 15px;
+        }
+
+        .skills {
+                justify-content: center;
+        }
+
+        .skills span {
+                padding: 10px 18px;
+                font-size: 0.9rem;
+        }
+
+        .about-img,
+        .about-content {
+                transform: none;
+        }
+}
