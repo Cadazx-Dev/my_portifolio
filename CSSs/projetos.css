@@ -13,13 +13,13 @@
         font-size: 4rem;
 }
 
-.filtros {
+.filtro {
         display: flex;
         gap: 15px;
         margin-top: 30px;
 }
 
-.filtros-btn {
+.filtro-btn {
         padding: 12px 24px;
         border: none;
         border-radius: 999px;
@@ -51,7 +51,7 @@
 
 .projeto-card {
     width: 350px;
-    height: 180px;
+    height: 100px;
     padding: 25px;
     border-radius: 20px;
     background: rgba(255,255,255,0.08);
