@@ -3,4 +3,12 @@
         color: aliceblue;
         height: 100vh;
         scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+}
+
+.projetos h2 {
+        font-size: 4rem;
 }
