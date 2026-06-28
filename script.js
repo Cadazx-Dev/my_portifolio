@@ -1,4 +1,4 @@
-/* Js do about*/
+/* Js do about */
 
 const hiddenElements = document.querySelectorAll(
     ".about-img, .about-content"
@@ -14,20 +14,13 @@ const observer = new IntersectionObserver((entries) => {
         }
 
     });
-
-        {
-            threshold: 0.3
-        }
-
-});
+}, { threshold: 0.3 });
 
 hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-/* Js do projetos*/
-
-
+/* Js do projetos */
 
 const botoesFiltro = document.querySelectorAll(".filtro-btn");
 const projetos = document.querySelectorAll(".projeto-card");
