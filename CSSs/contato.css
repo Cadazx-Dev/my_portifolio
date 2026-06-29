@@ -1,0 +1,17 @@
+.contato {
+    scroll-snap-align: start;
+    background: aliceblue;
+    color: #0a0a0f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 40px;
+}
+
+.contato-inner {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
