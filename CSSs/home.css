@@ -72,8 +72,8 @@
     left: 0;
     right: 0;
     z-index: 100;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 20px 60px;
     background: rgba(10, 10, 15, 0.8);
@@ -85,12 +85,14 @@
     position: static;
     text-decoration: none;
     color: aliceblue;
+    justify-self: start;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 32px;
+    justify-self: center;
 }
 
 .nav-links a {
@@ -103,4 +105,8 @@
 
 .nav-links a:hover {
     color: aliceblue;
+}
+
+.idioma {
+    justify-self: end;
 }
