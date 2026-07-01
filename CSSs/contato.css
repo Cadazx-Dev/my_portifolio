@@ -96,3 +96,17 @@ css.idioma {
     color: #8899bb;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
+
+/*Tela do celular*/
+
+@media (max-width: 768px) {
+
+    .contato-inner h2 {
+        font-size: 2.5rem;
+    }
+
+    .contato-inner p {
+        font-size: 0.95rem;
+    }
+
+}
